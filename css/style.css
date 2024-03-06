@@ -58,6 +58,7 @@ body {
   width: 35%;
   height: auto;
   margin-bottom: -150px;
+  margin-left: -80px;
 }
 
 .title-container h1 {
@@ -273,6 +274,7 @@ body {
     width: 350px;
     margin-bottom: -100px;
     margin-top: -50px;
+    margin-left: 0;
   }
 
   /*  */
