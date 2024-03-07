@@ -109,6 +109,12 @@ body {
   margin-bottom: 125px;
 }
 
+.hr-3 {
+  width: 70%;
+  margin-top: 125px;
+  margin-bottom: 75px;
+}
+
 /*  */
 
 .content-title {
@@ -268,12 +274,20 @@ body {
   cursor: pointer;
 }
 
+.agenda-title:hover {
+  color: #99d44f;
+}
+
+.active-title {
+  color: #99d44f;
+}
+
 .agenda-content {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: opacity 1s ease, max-height 1s ease;
-  font-size: 14px;
+  font-size: 12.5px;
 }
 
 .agenda-content.open {

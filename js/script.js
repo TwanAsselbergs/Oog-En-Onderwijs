@@ -19,30 +19,29 @@ document.addEventListener("scroll", function () {
 var titles = document.querySelectorAll(".agenda-title");
 titles.forEach(function (title) {
   title.addEventListener("click", function (event) {
-    // Stop propagation to prevent the document's click event from being triggered
     event.stopPropagation();
 
-    // Check if the clicked item is already open
     var content = this.nextElementSibling;
     var wasOpen = content.classList.contains("open");
 
-    // Close all items
+    // Remove active class from all titles
     titles.forEach(function (otherTitle) {
       var otherContent = otherTitle.nextElementSibling;
       otherContent.classList.remove("open");
+      otherTitle.classList.remove("active-title"); // remove active class
     });
 
-    // Open the clicked item, unless it was already open
     if (!wasOpen) {
       content.classList.add("open");
+      this.classList.add("active-title"); // add active class to clicked title
     }
   });
 });
 
-// Add a click event to the document to close all items
 document.addEventListener("click", function () {
   titles.forEach(function (title) {
     var content = title.nextElementSibling;
     content.classList.remove("open");
+    title.classList.remove("active-title"); // remove active class
   });
 });
