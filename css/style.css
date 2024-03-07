@@ -63,9 +63,15 @@ body {
 
 .title-container h1 {
   font-size: 75px;
-  margin-bottom: -100px;
+  margin-bottom: -125px;
   color: #17b554;
   text-align: center;
+}
+
+.title-container p {
+  color: black;
+  font-size: 25px;
+  margin-left: 25px;
 }
 
 .green {
