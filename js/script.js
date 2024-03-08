@@ -1,5 +1,5 @@
 document.addEventListener("scroll", function () {
-  const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("div.scroll-section");
   const navLinks = document.querySelectorAll(".nav a");
 
   if (window.scrollY === 0) {
@@ -24,16 +24,15 @@ titles.forEach(function (title) {
     var content = this.nextElementSibling;
     var wasOpen = content.classList.contains("open");
 
-    // Remove active class from all titles
     titles.forEach(function (otherTitle) {
       var otherContent = otherTitle.nextElementSibling;
       otherContent.classList.remove("open");
-      otherTitle.classList.remove("active-title"); // remove active class
+      otherTitle.classList.remove("active-title");
     });
 
     if (!wasOpen) {
       content.classList.add("open");
-      this.classList.add("active-title"); // add active class to clicked title
+      this.classList.add("active-title");
     }
   });
 });
@@ -42,6 +41,6 @@ document.addEventListener("click", function () {
   titles.forEach(function (title) {
     var content = title.nextElementSibling;
     content.classList.remove("open");
-    title.classList.remove("active-title"); // remove active class
+    title.classList.remove("active-title");
   });
 });
