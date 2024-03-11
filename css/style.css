@@ -11,12 +11,12 @@ body {
 
 .nav {
   position: fixed;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: -75px;
   gap: 95px;
   font-size: 25px;
   background-color: rgb(255, 255, 255, 0.9);
@@ -39,10 +39,6 @@ body {
 .nav a.active {
   color: #17b554;
   transition: color 0.3s ease;
-}
-
-.mobile-nav {
-  display: none;
 }
 
 /*  */
@@ -392,16 +388,11 @@ body {
 
 @media screen and (max-width: 600px) {
   .nav {
-    display: none;
+    font-size: 10px;
+    gap: 5px;
   }
 
-  .mobile-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    font-weight: bold;
-  }
+  /*  */
 
   .hr {
     width: 75%;
@@ -413,14 +404,6 @@ body {
     width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-
-  .mobile-nav a {
-    color: #000000;
-    font-size: 22.5px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    text-decoration: none;
   }
 
   /*  */
