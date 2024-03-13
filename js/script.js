@@ -44,3 +44,8 @@ document.addEventListener("click", function () {
     title.classList.remove("active-title");
   });
 });
+
+document.querySelector("#hoi-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.querySelector(".mobile-nav-links").classList.toggle("hidden");
+});

@@ -31,7 +31,8 @@ body {
 
 .nav {
   position: fixed;
-  top: 0px;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +66,11 @@ body {
 
 .mobile-nav {
   display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 /*  */
@@ -159,6 +165,7 @@ body {
 
 .brull-container p {
   width: 47.5%;
+  margin-left: 18px;
 }
 
 .brull-container img {
@@ -180,6 +187,7 @@ body {
 .brull-container-link a {
   color: #17b554;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .brull-container-link a:hover {
